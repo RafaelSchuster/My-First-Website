@@ -1,0 +1,362 @@
+body{
+    font-family: 'Baloo Tamma 2', cursive;
+    text-align: center;
+    background: url('Imgs/turq.jpg') ;
+    color: white;
+    font-size: 1.3rem;
+    margin: 0;   
+}
+/* Navigation Bar on Top */
+#navlist{
+    border: 1px solid white;
+    position: fixed;
+    width: 100%;
+    font-size: 1.5rem;
+    list-style: none;
+    background-image: url('Imgs/abstract3.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0%;
+    margin: 0%;
+    z-index: 2;
+}
+
+/* Line of Icons */
+.list{
+    display: flex;
+    justify-content: center;
+    
+}
+.list li{
+    padding: 15px;
+}
+
+/* My Name Main Page */
+h1{
+    font-size: 200%;
+}
+
+/* Card and Animation*/
+.mycard{
+    background-color:#056676 ;
+    width: 500px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+.animate{
+    color : rgb(223, 166, 82);
+    background: linear-gradient(357deg, rgba(13,145,115,0.6979166666666667) 25%, rgba(4,71,59,0.13489145658263302) 61%, rgba(23,168,232,0.6334908963585435) 91%); 
+    box-shadow: 0px 16px 48px 14px rgba(114, 231, 202, 0.75);
+}
+
+.mycard img{
+    margin-top: 5rem;
+}
+
+.overlay{
+    position: absolute;
+    margin: auto;
+    top:0;
+    bottom: 11rem;
+    left: 0;
+    right: 0;
+    height: 460px;
+    width: 500px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(160, 204, 202)
+  }
+
+.mycard:hover .overlay{
+    opacity: 0.4;
+}
+
+.transition{
+  color:#056676;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Navigation Bar on the Bottom of all Pages */
+#downlist{
+    margin: 0;
+    padding-left: 0;
+    display: flex;
+    text-align: left;
+    background-color: teal;
+    width: 100%;
+    height: 100px; 
+}
+#downlist li{
+    padding: 35px ; 
+}
+
+/* Footer of All Pages- Technologies  */
+.footertext{
+    text-align: center;
+    background-image: url('Imgs/abstract3.jpg');
+    width: 100%;
+    color:  #056676;
+    padding-bottom: 2rem;
+    padding-top: 30px;
+}
+
+/* About and Contact Header */
+h2{
+    font-size: 3rem;
+    padding-top: 3rem;
+    
+}
+
+/* Design for About and Contact Headers */
+.about, .contact{
+    background-color: #056676;
+    border: 1px solid white;
+}
+
+
+/* Lists: AllPages: Top Navigation Bar, Bottom NavBar. HomePage: Icons. About: Cities, Education.  */
+ul{
+    list-style: none;
+}
+
+/* Refers to the NavBar links, HomePage Icons, and the website link on the Education paragraph */
+a{
+    text-decoration: none;
+    color: white;
+    transition: box-shadow 0.2s, border-radius 0.01s;
+}
+
+a:hover{
+    color: rgb(223, 166, 82);
+    background: none;
+    box-shadow: none;
+}
+
+.icons:hover{
+    color: white;
+    box-shadow: 0px 16px 48px 14px rgba(114, 231, 202, 0.75);   
+    border-radius:  35%;
+    background: rgb(13,145,115);
+background: linear-gradient(357deg, rgba(13,145,115,0.6979166666666667) 25%, rgba(4,71,59,0.13489145658263302) 61%, rgba(23,168,232,0.6334908963585435) 91%);
+}
+
+/*For the website link on the Education paragraph in About */
+.website:hover{
+    color: rgb(104, 75, 75);
+    background: none;
+    box-shadow: none;
+}
+
+/* Headers in the About Page : Cities, Computer Programming, Education */
+h3{
+    padding-top: 70px;
+    margin: 0%;
+}
+
+/* "About" Header */
+.about{
+    margin: 0%;
+    padding-top: 60px;
+}
+
+/* First Paragraph in About */
+.greet{
+    padding-top: 100px;
+}
+
+
+/* Paragraphs on the About Page */
+p{
+    text-align: left;
+    padding-top: 40px;
+    margin: auto;
+    width: 40%;    
+}
+
+/* "Cities I've Lived in" Side Bar in About */
+.sidebar{
+    float: right;
+    padding-right: 30px;
+    box-sizing: border-box;
+    background-color: teal;
+    text-align: left;
+    border: 1px solid white;    
+}
+
+/*City Names*/
+.city{
+    text-align: center;
+    padding-left: 30px;
+}
+/*Map buttons*/
+.nextbtn, .prevbtn{
+    padding: 10px;
+    width: 6rem;
+    background-color: rgb(184, 224, 211);
+    color: #056676;
+    font-size: large;
+    margin-left: 63px;
+    margin-bottom: 10px;
+     
+}
+
+/* Map on Cities Side Bar */
+.iframe{
+    display: flex;
+    justify-content: center;
+    margin-left: 40px;
+}
+
+h5{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding-left: 45px;
+}
+
+/* Education Header */
+.edu{
+    padding-right: 515px;
+}
+
+/* Education List in the About Page */
+.aboutlist li{ 
+    text-align: left;
+    width: 40%;
+    padding-left: 33rem;
+}
+.aboutlist{
+    
+    text-align: center;
+}
+
+/* Personal Interest Paragraph Bottom of About */
+.int{
+    margin-bottom: 50px;
+}
+
+/* Flex Box Container in the Bottom of "About" */
+.container1{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.container1 div{
+    border: 1px solid white;
+    flex-basis: 27%;
+    padding-bottom: 10px;
+    background-color:#3b2e5a;
+} 
+
+/* Headers of Flex Boxes */
+h4{
+    margin-bottom: 10px;
+}
+
+/*FlexBoxes*/
+.box1{
+    order: 3;
+}
+.box2{
+    order: 2;
+}
+.box3{    
+    order: 1;
+}
+
+/*Flexboxes with Favorites*/
+.favorite:hover{
+    color: rgb(211, 165, 165);
+    background: none;
+    box-shadow: none;
+}
+
+/* Contact Header */
+.contact{
+    margin: 0%;
+}
+
+/* Forms in Contact */
+.form{
+    padding-top: 5rem;
+}
+label{
+    padding: 10px;
+}
+input{
+    padding: 10px;
+    width: 40%;
+    text-align: center;
+}
+textarea{
+    padding-top: 3rem;
+    margin: 2rem;
+    width: 40%;
+    text-align: center;
+}
+
+/* Gender Header */
+.gender{
+    padding-top: 30px;
+}
+
+/* Radio Menu */
+.radio{
+    margin: auto;
+    padding-right: 80px;
+    width: 30px 
+}
+
+/* Submit Button */
+.submit{
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 40%;
+    background-color:  #ffad5a;
+    color:gray;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.submit:hover{
+    background-color: rgb(4, 61, 56);
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

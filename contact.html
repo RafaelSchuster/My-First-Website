@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <!--Main Menu Navigation Bar -->
+    <ul id="navlist">
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="about.html" >About</a></li>
+        <li><a href="contact.html">Contact</a></li>     
+    </ul>
+
+    <!--Class for the Main Header-->
+    <h2 class="contact">Contact</h2>
+
+    <div>
+        <!--Class for the Forms and Submit Button-->
+        <form class="form">
+            <label for="firstname" class="label">First Name: </label><br>
+            <input type="text" id="firstname" name="fname" placeholder="What's your First Name?" class="input"  required ><br>
+            <label for="lname" class="label">Last Name:</label><br>
+            <input type="text" id="lname" name="lname" placeholder="What's your Last Name?" class="input"><br>
+            <label for="email" class="label">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="What's your E-mail adress?" class="input" required ><br>
+            <label for="date" class="label">Date of Birth:</label><br>
+            <input type="date" id="date" name="date" class="input" required><br><br>
+            <label for="msg" class="label">Message:</label><br>
+            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="I would love to hear from you!" class="input" required></textarea><br>
+            <!--Class for the Radio Options-->
+            <div class="radio">
+                <label for="Gender" class="radioLabel">Gender:</label><br>
+                <label for="Male" >Male</label>
+                <input type="radio" id="Male" name="gender" value="Male" class="radiobtn" required>
+                <label for="Female" >Female</label>
+                <input type="radio" id="Female" name="gender" value="Female" class="radiobtn" required >
+                <label for="Other" >Other</label>
+                <input type="radio" id="Other" name="gender" value="Other" class="radiobtn" required>
+                <br><br>
+            <!-- End Radio-->
+            </div>
+            <button type="submit" class="submit">Submit</button>
+            <br>
+            
+
+        </form>
+    </div>
+        <!--Bottom Navigation Bar-->
+    <nav>
+        <ul id="downlist">
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="about.html" >About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <footer class="footertext"></footer>
+    </nav>
+    <script src="JavaScript/footer.js"></script>
+    <script src="JavaScript/submit.js"></script>
+    <script src="JavaScript/form.js"></script>
+</body>
+</html>
